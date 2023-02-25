@@ -1,6 +1,6 @@
 import React from 'react'
 import { Anime } from '../types'
-import '../Fontheader.css'
+import '../styles/Fontheader.css'
 
 interface animeDetail extends Anime {
     back: any

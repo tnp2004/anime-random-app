@@ -5,7 +5,7 @@ import { Anime } from "./types"
 import AnimeDetails from './components/AnimeDetails'
 import Loading from './components/Loading'
 import History from './components/History'
-import './Fontheader.css'
+import './styles/Fontheader.css'
 import arrow from './images/down-arrows.png'
 import 'animate.css';
 import animePicture from './images/anime-pic.png'
@@ -29,6 +29,7 @@ export default function App({ }: Props) {
   const getNewAnimes = async () => {
     setcurrentAnimes([])
     setLoading(true)
+    setIsGreeting(false)
 
     const animeData = await fetchAnimeData()
     setcurrentAnimes(animeData)

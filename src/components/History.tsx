@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../Fontheader.css'
+import '../styles/Fontheader.css'
 import { Anime } from '../types'
 import AnimeDetails from './AnimeDetails'
 
